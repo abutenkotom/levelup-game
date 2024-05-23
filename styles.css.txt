@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LevelUp Social Gaming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <h1>LevelUp Social Gaming</h1>
+    <div class="level-display">
+      <h2>Current Level: <span id="current-level">1</span></h2>
+      <progress id="level-progress" value="1" max="1000"></progress>
+    </div>
+    <div class="payment-section">
+      <label for="payment-amount">Enter Payment Amount: </label>
+      <input type="number" id="payment-amount" min="1" max="1000">
+      <button onclick="makePayment()">Level Up</button>
+    </div>
+    <div class="badges-section">
+      <h2>Badges</h2>
+      <div id="badges"></div>
+    </div>
+    <div class="share-section">
+      <h2>Share Your Achievements</h2>
+      <button onclick="shareOnSocialMedia('snapchat')">Snapchat</button>
+      <button onclick="shareOnSocialMedia('instagram')">Instagram</button>
+      <button onclick="shareOnSocialMedia('whatsapp')">WhatsApp</button>
+      <button onclick="shareOnSocialMedia('x')">X</button>
+      <button onclick="shareOnSocialMedia('facebook')">Facebook</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
